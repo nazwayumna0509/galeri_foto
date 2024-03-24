@@ -8,8 +8,8 @@ $ceksuka = mysqli_query($koneksi, "SELECT * FROM likefoto WHERE fotoid='$fotoid'
 
 if (mysqli_num_rows($ceksuka) ==1) {
 	while($row = mysqli_fetch_array($ceksuka)){
-		$likeid = $row['likeid'];
-		$query = mysqli_query($koneksi, "DELETE FROM likefoto WHERE likeid='$likeid'");
+		$likeID = $row['likeID'];
+		$query = mysqli_query($koneksi, "DELETE FROM likefoto WHERE likeID='$likeID'");
 		echo"<script>
 		location.href='../admin/index.php';
 		</script>";

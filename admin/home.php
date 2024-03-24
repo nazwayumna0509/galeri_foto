@@ -19,24 +19,38 @@ if ($_SESSION['status'] != 'login')  {
     <title>Website Galeri Foto</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-</head>
+    <style>
+		body {
+			margin: 0;
+			background: linear-gradient(90deg, #884ec3, #f1a4b5);
+		}
+	</style>
+  </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top " style="background-color: #000000">
     <div class="container">
-      <a class="navbar-brand" href="index.php">Website Galeri Foto</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.php">
+        <h3>Galeri Foto</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+          <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="foto.php">Foto</a></li>
+          <li class="nav-item"><a class="nav-link" href="album.php">Album</a></li>
+        </ul>
+      </div>
       <div class="collapse navbar-collapse mt-2" id="navbarNavAltMarkup">
         <div class="navbar-nav me-auto">
-          <a href="home.php" class="nav-link">Home</a>
-          <a href="album.php" class="nav-link">Album</a>
-          <a href="foto.php" class="nav-link">Foto</a>
         </div>
         <a href="../config/aksi_logout.php" class="btn btn-outline-danger m-1">Keluar</a>
-  </div>
-</nav>
+      </div>
+    </div>
+  </nav>
 
 <div class="container mt-3">
 Album :

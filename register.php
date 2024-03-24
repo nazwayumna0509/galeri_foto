@@ -6,20 +6,24 @@
     <title>Website Galeri Foto</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 </head>
+<style>
+  body{
+    background-color: #e6c1ff;
+  }
+</style>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top " style="background-color: #000000";>
   <div class="container">
-    <a class="navbar-brand" href="index.php">Website Galeri Foto</a>
+    <a class="navbar-brand" href="index.php"><h3>Galeri Foto</h3></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse mt-2" id="navbarNavAltMarkup">
       <div class="navbar-nav me-auto">
-
       </div>
-      <a href="register.php" class="btn btn-outline-primary m-1">Daftar</a>
-      <a href="login.php" class="btn btn-outline-succsess m-1">Masuk</a>
+      <a href="register.php" class="btn btn-outline-primary m-1">Register</a>
+      <a href="login.php" class="btn btn-outline-success m-1">Login</a>
     </div>
   </div>
 </nav>
@@ -48,18 +52,12 @@
                         </div>
                     </form>
                     <hr>
-                    <p>Sudah Punya akun? <a href="login.php">Login di sini yah!!</p>
+                    <p>Sudah Punya akun? <a href="login.php">Login</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<footer class="d-flex justify-content-center border-top mt-3 bg-light fixed-bottom">
-    <p>&copy; UKK RPL 2024 </p>
-</footer>
-
-    
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
